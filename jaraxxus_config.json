@@ -1,0 +1,31 @@
+{
+  "agents": [
+    {
+      "name": "ResearchAgent",
+      "description": "An agent that can perform web searches and summarize findings.",
+      "enabled": true,
+      "tools": [
+        "web_scrape",
+        "summarizer"
+      ]
+    },
+    {
+      "name": "CodingAgent",
+      "description": "An agent that can write and execute Python code.",
+      "enabled": true,
+      "tools": [
+        "run_command"
+      ]
+    },
+    {
+      "name": "FileSystemAgent",
+      "description": "An agent for interacting with the local file system.",
+      "enabled": false,
+      "tools": [
+        "list_files",
+        "read_file",
+        "write_file"
+      ]
+    }
+  ]
+}

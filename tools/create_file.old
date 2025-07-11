@@ -1,0 +1,10 @@
+# tools/create_file.py
+
+def create_file(path, content=""):
+    """Create a new file at the given path with optional content."""
+    with open(path, 'w') as f:
+        f.write(content)
+    return f"File created at {path}"
+
+# Optionally, you might include metadata or a registration call here.
+# For simplicity, we will register tools dynamically from outside.
